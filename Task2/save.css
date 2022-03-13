@@ -1,0 +1,50 @@
+.SaveButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.SaveButton .sa-ve, .SaveButton .de-lete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+}
+
+.SaveButton .cancel, .SaveButton .save {
+  border-radius: 5%;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  border: 1px solid silver;
+}
+
+.SaveButton .cancel {
+  color: silver;
+  background-color: white;
+}
+
+.SaveButton .save {
+  -webkit-box-shadow: 0 0 5px #b0afc4;
+          box-shadow: 0 0 5px #b0afc4;
+  color: white;
+  background-image: -webkit-gradient(linear, right top, left top, from(#9bf09b), color-stop(#bbfa80), to(#b9adb5));
+  background-image: linear-gradient(to left, #9bf09b, #bbfa80, #b9adb5);
+  text-transform: uppercase;
+}
+
+.SaveButton .save:hover, .SaveButton .save:focus, .SaveButton .save:active {
+  -webkit-box-shadow: 0 0 10px #b0afc4;
+          box-shadow: 0 0 10px #b0afc4;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/*# sourceMappingURL=save.css.map */
