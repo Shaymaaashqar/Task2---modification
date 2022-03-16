@@ -8,17 +8,20 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
     Verdana, sans-serif;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   .box-border {
-    overflow: hidden;
     width: 40%;
+    min-width: 400px;
     height: 80%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     border: 5px solid $gray;
-    margin-top: 3%;
+    min-height: 500px;
+    margin-top: 30px;
+    padding: 10px 10px 30px 10px;
 
     @import "addMembers";
     @import "findMembers";

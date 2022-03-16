@@ -1,25 +1,31 @@
 .findMembers {
-  flex: 3;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding-bottom: 3%;
+  width: 60%;
 }
-.findMembers .findd {
+.findMembers .find {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: relative;
 }
-.findMembers .findd .fa-solid {
+.findMembers .find .magnifier {
+  position: absolute;
+  left: 8px;
+  z-index: 1;
   font-size: 20px;
   color: silver;
 }
-.findMembers .findd .find {
-  width: 60%;
+.findMembers .find .find {
+  width: 100%;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   outline: navajowhite;
   border: none;
   padding-bottom: 5px;
+  padding-left: 35px;
   border-bottom: 2px solid silver;
   margin-bottom: 4%;
 }
@@ -27,36 +33,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: auto;
 }
 .findMembers .press .user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   border: 2px solid silver;
   padding: 10px;
   margin-bottom: 5px;
-  width: 60%;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
+  box-sizing: border-box;
+  width: 100%;
   align-items: center;
 }
-.findMembers .press .user .left {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-}
 .findMembers .press .user .left .fa-solid {
-  margin-left: 5px;
-  padding-right: 10px;
+  margin: 0 5px 0 5px;
   font-size: 15px;
 }
 .findMembers .press .user .left label {
-  font-size: 14px;
-}
-.findMembers .press .user .right {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
+  font-size: 15px;
 }
 .findMembers .press .user .right .fa {
   font-size: x-large;

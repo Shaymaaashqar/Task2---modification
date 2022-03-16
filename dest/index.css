@@ -5,72 +5,78 @@ body {
 .container {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .container .box-border {
-  overflow: hidden;
   width: 40%;
+  min-width: 400px;
   height: 80%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   border: 5px solid gainsboro;
-  margin-top: 3%;
+  min-height: 500px;
+  margin-top: 30px;
+  padding: 10px 10px 30px 10px;
 }
 .container .box-border .addMembers {
-  text-align: left;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 30px;
 }
-.container .box-border .addMembers b {
-  margin: 30px 35px;
+.container .box-border .addMembers header {
+  font-weight: bold;
   color: #706262;
   font-size: 15px;
 }
-.container .box-border .addMembers .deleteIcon {
-  margin: 0px 0px 0px 10px;
+.container .box-border .addMembers button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #bdbdda;
-}
-.container .box-border .addMembers .deleteIcon button {
-  height: 35px;
   width: 35px;
   background-color: white;
-  border: 2px solid white;
+  border: 0;
   cursor: pointer;
+  font-size: 13px;
+  color: #bdbdda;
 }
-.container .box-border .addMembers .deleteIcon .fas {
+.container .box-border .addMembers .close-icon {
   font-size: xx-large;
   color: #bdbdda;
 }
-.container .box-border .addMembers .deleteIcon h {
-  font-size: 13px;
-}
 .container .box-border .findMembers {
-  flex: 3;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding-bottom: 3%;
+  width: 60%;
 }
-.container .box-border .findMembers .findd {
+.container .box-border .findMembers .find {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: relative;
 }
-.container .box-border .findMembers .findd .fa-solid {
+.container .box-border .findMembers .find .magnifier {
+  position: absolute;
+  left: 8px;
+  z-index: 1;
   font-size: 20px;
   color: silver;
 }
-.container .box-border .findMembers .findd .find {
-  width: 60%;
+.container .box-border .findMembers .find .find {
+  width: 100%;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   outline: navajowhite;
   border: none;
   padding-bottom: 5px;
+  padding-left: 35px;
   border-bottom: 2px solid silver;
   margin-bottom: 4%;
 }
@@ -78,36 +84,25 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: auto;
 }
 .container .box-border .findMembers .press .user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   border: 2px solid silver;
   padding: 10px;
   margin-bottom: 5px;
-  width: 60%;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
+  box-sizing: border-box;
+  width: 100%;
   align-items: center;
 }
-.container .box-border .findMembers .press .user .left {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-}
 .container .box-border .findMembers .press .user .left .fa-solid {
-  margin-left: 5px;
-  padding-right: 10px;
+  margin: 0 5px 0 5px;
   font-size: 15px;
 }
 .container .box-border .findMembers .press .user .left label {
-  font-size: 14px;
-}
-.container .box-border .findMembers .press .user .right {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
+  font-size: 15px;
 }
 .container .box-border .findMembers .press .user .right .fa {
   font-size: x-large;
@@ -128,36 +123,31 @@ body {
 .container .box-border .findMembers .press .u7 .right .fa {
   color: #448a44;
 }
-.container .box-border .SaveButton {
+.container .box-border .actionButtons {
   display: flex;
   flex-direction: row;
-  padding-bottom: 5%;
-  justify-content: center;
+  justify-content: space-around;
+  width: 60%;
 }
-.container .box-border .SaveButton .sa-ve,
-.container .box-border .SaveButton .de-lete {
-  display: flex;
-  padding-left: 20px;
-}
-.container .box-border .SaveButton .cancel,
-.container .box-border .SaveButton .save {
+.container .box-border .actionButtons .cancel,
+.container .box-border .actionButtons .save {
   border-radius: 5%;
   height: 40px;
   width: 100px;
   cursor: pointer;
   border: 1px solid silver;
 }
-.container .box-border .SaveButton .cancel {
+.container .box-border .actionButtons .cancel {
   color: silver;
   background-color: white;
 }
-.container .box-border .SaveButton .save {
+.container .box-border .actionButtons .save {
   box-shadow: 0 0 5px #b0afc4;
   color: white;
   background-image: linear-gradient(to left, #9bf09b, #bbfa80, #b9adb5);
   text-transform: uppercase;
 }
-.container .box-border .SaveButton .save:hover, .container .box-border .SaveButton .save:focus, .container .box-border .SaveButton .save:active {
+.container .box-border .actionButtons .save:hover, .container .box-border .actionButtons .save:focus, .container .box-border .actionButtons .save:active {
   box-shadow: 0 0 10px #b0afc4;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);

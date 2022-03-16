@@ -1,37 +1,35 @@
 @import "colors";
 .addMembers {
-  text-align: left;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 30px;
 
-  b {
-    margin: 30px 35px;
+  header {
+    font-weight: bold;
     color: $darkGray;
     font-size: 15px;
   }
 
-  .deleteIcon {
-    margin: 0px 0px 0px 10px;
+  button {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    // height: 35px;
+    width: 35px;
+    background-color: $white;
+    border: 0;
+    cursor: pointer;
+    font-size: 13px;
     color: $lightGray;
+  }
 
-    button {
-      height: 35px;
-      width: 35px;
-      background-color: $white;
-      border: 2px solid $white;
-      cursor: pointer;
-    }
-    .fas {
-      font-size: xx-large;
-      color: $lightGray;
-    }
-
-    h {
-      font-size: 13px;
-    }
+  .close-icon {
+    font-size: xx-large;
+    color: $lightGray;
   }
 }

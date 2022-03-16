@@ -1,33 +1,28 @@
-.SaveButton {
+.actionButtons {
   display: flex;
   flex-direction: row;
-  padding-bottom: 5%;
-  justify-content: center;
+  justify-content: space-around;
+  width: 60%;
 }
-.SaveButton .sa-ve,
-.SaveButton .de-lete {
-  display: flex;
-  padding-left: 20px;
-}
-.SaveButton .cancel,
-.SaveButton .save {
+.actionButtons .cancel,
+.actionButtons .save {
   border-radius: 5%;
   height: 40px;
   width: 100px;
   cursor: pointer;
   border: 1px solid silver;
 }
-.SaveButton .cancel {
+.actionButtons .cancel {
   color: silver;
   background-color: white;
 }
-.SaveButton .save {
+.actionButtons .save {
   box-shadow: 0 0 5px #b0afc4;
   color: white;
   background-image: linear-gradient(to left, #9bf09b, #bbfa80, #b9adb5);
   text-transform: uppercase;
 }
-.SaveButton .save:hover, .SaveButton .save:focus, .SaveButton .save:active {
+.actionButtons .save:hover, .actionButtons .save:focus, .actionButtons .save:active {
   box-shadow: 0 0 10px #b0afc4;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
