@@ -1,0 +1,34 @@
+.addMembers {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.addMembers b {
+  margin: 30px 35px;
+  color: #706262;
+  font-size: 15px;
+}
+.addMembers .deleteIcon {
+  margin: 0px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #bdbdda;
+}
+.addMembers .deleteIcon button {
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.addMembers .deleteIcon .fas {
+  font-size: xx-large;
+  color: #bdbdda;
+}
+.addMembers .deleteIcon h {
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=addMembers.css.map */

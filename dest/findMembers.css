@@ -1,0 +1,81 @@
+.findMembers {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3%;
+}
+.findMembers .findd {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.findMembers .findd .fa-solid {
+  font-size: 20px;
+  color: silver;
+}
+.findMembers .findd .find {
+  width: 60%;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: navajowhite;
+  border: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid silver;
+  margin-bottom: 4%;
+}
+.findMembers .press {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.findMembers .press .user {
+  border: 2px solid silver;
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.findMembers .press .user .left {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.findMembers .press .user .left .fa-solid {
+  margin-left: 5px;
+  padding-right: 10px;
+  font-size: 15px;
+}
+.findMembers .press .user .left label {
+  font-size: 14px;
+}
+.findMembers .press .user .right {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.findMembers .press .user .right .fa {
+  font-size: x-large;
+}
+.findMembers .press .u1 .right .fa,
+.findMembers .press .u3 .right .fa,
+.findMembers .press .u5 .right .fa {
+  color: #a0b1a0;
+}
+.findMembers .press .u1 .left,
+.findMembers .press .u3 .left,
+.findMembers .press .u5 .left {
+  color: #a0b1a0;
+}
+.findMembers .press .u2 .right .fa,
+.findMembers .press .u4 .right .fa,
+.findMembers .press .u6 .right .fa,
+.findMembers .press .u7 .right .fa {
+  color: #448a44;
+}
+
+/*# sourceMappingURL=findMembers.css.map */
