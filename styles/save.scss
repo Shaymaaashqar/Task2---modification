@@ -1,15 +1,9 @@
 @import "colors";
-.SaveButton {
+.actionButtons {
   display: flex;
   flex-direction: row;
-  padding-bottom: 5%;
-  justify-content: center;
-
-  .sa-ve,
-  .de-lete {
-    display: flex;
-    padding-left: 20px;
-  }
+  justify-content: space-around;
+  width: 60%;
 
   .cancel,
   .save {
@@ -19,6 +13,7 @@
     cursor: pointer;
     border: 1px solid $silver;
   }
+
   .cancel {
     color: $silver;
     background-color: $white;
